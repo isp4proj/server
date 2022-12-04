@@ -8,7 +8,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://54.238.175.157:3000"],
+    origin: [
+      "http://localhost:3000",
+      "http://54.238.175.157:3000",
+      "https://client-zeta-rose.vercel.app",
+    ],
     credentials: true,
   })
 );
