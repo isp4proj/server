@@ -8,11 +8,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "http://app.dockysec.xyz:3000",
-      "http://35.240.247.61:3000",
-    ],
+    origin: ["http://localhost:3000", "http://54.238.175.157:3000"],
     credentials: true,
   })
 );
