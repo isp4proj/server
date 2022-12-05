@@ -80,9 +80,18 @@ function checkAuth(roles) {
   };
 }
 
-var server = app.listen(5000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
+// var server = app.listen(5000, function () {
+//   var host = server.address().address;
+//   var port = server.address().port;
 
-  console.log("Example app listening at http://%s:%s", host, port);
+//   console.log("Example app listening at http://%s:%s", host, port);
+// });
+
+const options = {
+  key: fs.readFileSync(path.join(__dirname, "./cert/key.pem")),
+  cert: fs.readFileSync(path.join(__dirname, "./cert/cert.pem")),
+};
+
+const server = https.createServer(options, app).listen(5000, () => {
+  console.log("server running at " + 5000);
 });
