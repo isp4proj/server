@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose"); //admin user schema fields
 
 const admin = new mongoose.Schema({
   createdDate: {
