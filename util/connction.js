@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose");  //MongoDB connection
 
 const URI =
   "mongodb+srv://zeus:eKWBkPbIJtbWGbZ8@cluster0.kelnyif.mongodb.net/?retryWrites=true&w=majority";
