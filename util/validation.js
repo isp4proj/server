@@ -1,4 +1,4 @@
-const Joi = require("joi");
+const Joi = require("joi");  //login field validation
 
 const RegisterValidation = Joi.object({
   fullname: Joi.string().required(),
